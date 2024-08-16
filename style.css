@@ -5,7 +5,22 @@
     width: 300px;
     height: 100px;
 }
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
+body{ 
+    margin:0;
+    padding:0;
 }
+header{
+    background-color: #63A6DB;
+    margin:0;
+ }
+.section{
+    background-image: url("headerfoto.png");
+    padding:150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 650px;
+    }
+    main{
+        background-color:white;
+    }
