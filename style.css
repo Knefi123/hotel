@@ -37,8 +37,44 @@ header{
     }
     
     .filter-text{
-        font-size: ;
+        font-size:40px ;
         color: ;
         margin-right: 100px;
     }
-   
+    .borch195{
+        height:200px;
+        width:300px;
+        
+      
+        border-radius:40px;
+        border:solid, black, 5px;
+    }
+    .gulash235{
+        height:200px;
+        width:300px;
+        
+        
+        border-radius:40px;
+        border:solid, black, 5px;
+    }
+    .puvnuisup195{
+        height:200px;
+        width:300px;
+       
+       
+        border-radius:40px;
+        border:solid, black, 5px;
+    }
+    .textphoto1{
+        font-size:20px ;
+        color: ;
+        margin-right: ;
+    }
+    .catalog{
+        display:flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .card{
+        text-align: center;
+    }
