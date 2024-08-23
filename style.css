@@ -29,7 +29,16 @@ header{
     .filter{
         background-color:#63A6DB;
         height:100px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        text-align: right;
         
     }
     
+    .filter-text{
+        font-size: ;
+        color: ;
+        margin-right: 100px;
+    }
    
