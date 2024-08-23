@@ -19,8 +19,17 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 650px;
+    height: 400px;
+    
     }
     main{
         background-color:white;
+        margin:0;
     }
+    .filter{
+        background-color:#63A6DB;
+        height:100px;
+        
+    }
+    
+   
