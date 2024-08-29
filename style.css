@@ -1,5 +1,6 @@
 .container{
     margin: 0px 166px;
+
 }
 .img-logo{
     width: 300px;
@@ -12,7 +13,24 @@ body{
 header{
     background-color: #63A6DB;
     margin:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+
  }
+ .nav a,.call{
+text-decoration: none;
+color: #a15f0a;
+font-size: 25px;
+margin: 10px;
+
+}
+.nav a:hover,.call:hover{
+border-bottom: 3px solid #a15f0a;
+
+}
+
 .section{
     background-image: url("headerfoto.png");
     padding:150px;
