@@ -47,11 +47,8 @@ border-bottom: 3px solid #a15f0a;
         margin-top: 0;
     }
     
-    .filter-text{
-        font-size:40px ;
-        color: ;
-        margin-right: 100px;
-    }
+    
+    
     .borch195{
         height:200px;
         width:300px;
@@ -86,6 +83,33 @@ border-bottom: 3px solid #a15f0a;
         justify-content: space-around;
         margin-top: 100px;
     }
-    .card{
-        text-align: center;
+    .cards-holders{
+    display: flex;
+   justify-content: center;
     }
+    .card{
+       width: 349px;
+       box-shadow: 10px 10px 40px 20px #0000001A;
+       margin-right: 31px;
+       background-color: #fff;
+       margin-top: -137px;
+       padding: 8px 10px;
+       border-radius: 10px;
+       
+    }
+.card-imege{
+    display: flex;
+    justify-content: center;
+    padding-top: 31px;
+}
+.card-titel{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+
+}
+.card-desc{
+    text-align: center;
+    font-size: 26px;
+}
