@@ -34,3 +34,7 @@ header {
     border-bottom: 3px solid #a15f0a;
 
 }
+main{
+    background-image: url(menupizza.webp);
+    height: 100vh;
+}
