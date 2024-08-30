@@ -32,12 +32,12 @@ border-bottom: 3px solid #a15f0a;
 }
 
 .section{
-    background-image: url("headerfoto.png");
-    padding:150px;
+    height: 100vh;
+    width: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    height: 400px;
+    margin: 0 ;
+   
     
     }
     main{
