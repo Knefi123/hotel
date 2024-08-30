@@ -4,31 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
+    <title>Hotel Form</title>
     <link rel="stylesheet" href="about_us.css">
 </head>
 
 <body>
     <header>
-
-        <img class="img-logo" src="logo.png" alt="">
-
-
-        <div class="nav">
+        <img class="img-logo" src="logo.png" alt="Logo">
+        <nav class="nav">
             <a href="index.html">ГОЛОВНА</a>
             <a href="menu.html">МЕНЮ</a>
             <a href="about_us.html">ПРО НАС</a>
             <a href="reserved.html">БРОНЬ</a>
-            <a href="delively.html">ДОСТАВКА</a>
-        </div>
-
-        <a class="call" href="tel:+380972531845 "><img src="phone.png" width="20px">+380972531845</a>
+            <a href="delivery.html">ДОСТАВКА</a>
+        </nav>
+        <a class="call" href="tel:+380972531845">
+            <img src="phone.png" width="20px" alt="Phone"> +380972531845
+        </a>
     </header>
 
+    <section class="form-section">
+        <div class="left-content">
+            <img src="dostavka.png" class="dostavka" alt="Доставка">
+        </div>
+        <div class="right-content">
+            <div class="form-box">
+                <h2>Форма</h2>
+                <form action="submit_form_info.html" method="post" class="form">
+                    <label for="first-name">Ім'я:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Прізвище:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="district">Район:</label>
+                    <input type="text" id="district" name="district" required>
+
+                    <label for="address">Адреса:</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <button type="submit">Надіслати</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 
-<menu>
-    <img src="dostavka.png" class="dostavka">
-</menu>
 </html>

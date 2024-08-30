@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Registration</title>
+    <link rel="stylesheet" href="about_us.css">
+</head>
+
+<body>
+    <header>
+        <img class="img-logo" src="logo.png" alt="Logo">
+
+        <nav class="nav">
+            <a href="index.html">ГОЛОВНА</a>
+            <a href="menu.html">МЕНЮ</a>
+            <a href="about_us.html">ПРО НАС</a>
+            <a href="reserved.html">БРОНЬ</a>
+            <a href="delivery.html">ДОСТАВКА</a>
+        </nav>
+
+        <a class="call" href="tel:+380972531845"><img src="phone.png" width="20px" alt="Phone"> +380972531845</a>
+    </header>
+
+    <section class="registration-section">
+        <div class="register-box">
+            <h2>Реєстрація</h2>
+            <form action="submit_registration_info.html" method="post" class="registration-form">
+                <label for="new-username">Логін:</label>
+                <input type="text" id="new-username" name="new-username" required>
+
+                <label for="new-email">Електронна пошта:</label>
+                <input type="email" id="new-email" name="new-email" required>
+
+                <label for="new-password">Пароль:</label>
+                <input type="password" id="new-password" name="new-password" required>
+
+                <button type="submit">Зареєструватись</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
