@@ -11,6 +11,10 @@
 body {
     margin: 0;
     padding: 0;
+    background-image:url(https://shuba.life/static/content/thumbs/1905x1016/a/59/fevmxn---c1905x1016x50px50p-up--f7fd19bca1a6bd7e19e0b04082c6e59a.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 header {
     background-color: #63A6DB;
@@ -34,7 +38,8 @@ header {
     border-bottom: 3px solid #a15f0a;
 
 }
-main{
-    background-image: url(menupizza.webp);
-    height: 100vh;
-}
+
+.mainimg img{
+    position: absolute;
+    width:800px; left:600git px; bottom:250px;
+ }
