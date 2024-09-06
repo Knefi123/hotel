@@ -37,7 +37,7 @@
       <div class="right-content">
         <div class="form-box">
           <h2>Форма замовлення</h2>
-          <form action="submit_order.html" method="post" class="form">
+          <form action="" method="post" class="form">
             <label for="first-name">Ім'я:</label>
             <input
               type="text"
@@ -77,8 +77,22 @@
               required
             ></textarea>
 
-            <button type="submit">Надіслати замовлення</button>
+            
+              <button type="submit" id="myButton">Натисніть мене</button>
+
+              
           </form>
+          <script>
+          let form = document.querySelector('.form');
+
+        // Додаємо обробник події submit до форми
+        form.addEventListener('click', function(event) {
+            // Запобігаємо стандартній поведінці форми (перезавантаженню сторінки)
+            event.preventDefault();
+            
+            // Показуємо alert з текстом
+            alert('Ви натиснули кнопку!');
+            </script>
         </div>
       </div>
     </section>
