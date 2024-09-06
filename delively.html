@@ -129,6 +129,14 @@
     phone.addEventListener('input', function() {
       validatePhoneInput(phone);
     });
+    let btn=document.getElementById("myButton")
+    const form = document.getElementById('form');
+    btn.addEventListener("click", function(event) {
+    event.preventDefault(); // Запобігаємо стандартній поведінці кнопки submit
+    alert("Ваше замовлення сформовано!");
+    form.reset();
+    document.getElementById('order-details').value = '';
+});
   </script>
 </body>
 </html>
