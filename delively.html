@@ -1,51 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Order Food</title>
+    <link rel="stylesheet" href="delivery.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Form</title>
-    <link rel="stylesheet" href="about_us.css">
-</head>
-
-<body>
+  <body>
     <header>
-        <img class="img-logo" src="logo.png" alt="Logo">
-        <nav class="nav">
-            <a href="index.html">ГОЛОВНА</a>
-            <a href="menu.html">МЕНЮ</a>
-            <a href="about_us.html">ПРО НАС</a>
-            <a href="reserved.html">БРОНЬ</a>
-            <a href="delivery.html">ДОСТАВКА</a>
-        </nav>
-        <a class="call" href="tel:+380972531845">
-            <img src="phone.png" width="20px" alt="Phone"> +380972531845
-        </a>
+      <img class="img-logo" src="logo.png" alt="Logo" />
+      <nav class="nav">
+        <a href="index.html">ГОЛОВНА</a>
+        <a href="menu.html">МЕНЮ</a>
+        <a href="about_us.html">ПРО НАС</a>
+        <a href="reserved.html">БРОНЬ</a>
+        <a href="delivery.html">ДОСТАВКА</a>
+      </nav>
+      <a class="call" href="tel:+380972531845">
+        <img src="phone.png" width="20px" alt="Phone" /> +380972531845
+      </a>
     </header>
 
     <section class="form-section">
-       
-        <div class="right-content">
-            <div class="form-box">
-                <h2>Форма</h2>
-                <form action="submit_form_info.html" method="post" class="form">
-                    <label for="first-name">Ім'я:</label>
-                    <input type="text" id="first-name" name="first-name" required>
+      <div class="left-content">
+        <h1>Замовлення їжі</h1>
+        <p>
+          Ласкаво просимо до нашого ресторану! Щоб зробити замовлення,
+          будь ласка, заповніть форму нижче. Ми доставимо їжу прямо до
+          ваших дверей. Дякуємо, що обрали нас!
+        </p>
+      </div>
+      <div class="right-content">
+        <div class="form-box">
+          <h2>Форма замовлення</h2>
+          <form action="submit_order.html" method="post" class="form">
+            <label for="first-name">Ім'я:</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              required
+            />
 
-                    <label for="last-name">Прізвище:</label>
-                    <input type="text" id="last-name" name="last-name" required>
+            <label for="last-name">Прізвище:</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              required
+            />
 
-                    <label for="district">Район:</label>
-                    <input type="text" id="district" name="district" required>
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required />
 
-                    <label for="address">Адреса:</label>
-                    <input type="text" id="address" name="address" required>
+            <label for="district">Район:</label>
+            <input
+              type="text"
+              id="district"
+              name="district"
+              required
+            />
 
-                    <button type="submit">Надіслати</button>
-                </form>
-            </div>
+            <label for="address">Адреса:</label>
+            <input type="text" id="address" name="address" required />
+
+            <label for="order-details">Деталі замовлення:</label>
+            <textarea
+              id="order-details"
+              name="order-details"
+              rows="4"
+              placeholder="Вкажіть, будь ласка, деталі вашого замовлення"
+              required
+            ></textarea>
+
+            <button type="submit">Надіслати замовлення</button>
+          </form>
         </div>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
