@@ -1,45 +1,114 @@
-.container {
-    margin: 0px 166px;
-
-}
-
-.img-logo {
-    width: 300px;
-    height: 100px;
-}
-
 body {
     margin: 0;
     padding: 0;
-    background-image:url(https://shuba.life/static/content/thumbs/1905x1016/a/59/fevmxn---c1905x1016x50px50p-up--f7fd19bca1a6bd7e19e0b04082c6e59a.jpg);
+    font-family: Arial, sans-serif;
+    background-image: url(https://shuba.life/static/content/thumbs/1905x1016/a/59/fevmxn---c1905x1016x50px50p-up--f7fd19bca1a6bd7e19e0b04082c6e59a.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
 header {
     background-color: #63A6DB;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
-
+    padding: 20px 50px;
 }
 
-.nav a,.call {
+.img-logo {
+    width: 150px;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 50px;
+}
+
+.nav a {
     text-decoration: none;
     color: #a15f0a;
-    font-size: 25px;
-    margin: 10px;
-
+    font-size: 20px;
+    margin: 0 10px;
 }
 
-.nav a:hover,.call:hover {
+.nav a:hover {
     border-bottom: 3px solid #a15f0a;
-
 }
 
-.mainimg img{
-    position: absolute;
-    width:1000px; left:500px; top:130px;
- }
+.call {
+    text-decoration: none;
+    color: #a15f0a;
+    font-size: 20px;
+}
+
+.call img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.call:hover {
+    border-bottom: 3px solid #a15f0a;
+}
+
+.menu-container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 50px; 
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dish-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.dish-info {
+    flex: 1;
+}
+
+.dish-info h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.dish-info p {
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #a15f0a;
+}
+
+.desert{
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 5px;
+    text-align: center;
+    font-size:100px;
+    color:black;
+    display: inline-block;
+    padding: 10px;
+}
+
+.section-sup {
+    margin-top: 50px; 
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.308);
+}
