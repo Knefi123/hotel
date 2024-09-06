@@ -1,100 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Order Food</title>
-    <link rel="stylesheet" href="delivery.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Food</title>
+  <link rel="stylesheet" href="delivery.css" />
+</head>
+<body>
+  <header>
+    <img class="img-logo" src="logo.png" alt="Logo" />
+    <nav class="nav">
+      <a href="index.html">ГОЛОВНА</a>
+      <a href="menu.html">МЕНЮ</a>
+      <a href="about_us.html">ПРО НАС</a>
+      <a href="reserved.html">БРОНЬ</a>
+      <a href="delivery.html">ДОСТАВКА</a>
+    </nav>
+    <a class="call" href="tel:+380972531845">
+      <img src="phone.png" width="20px" alt="Phone" /> +380972531845
+    </a>
+  </header>
 
-  <body>
-    <header>
-      <img class="img-logo" src="logo.png" alt="Logo" />
-      <nav class="nav">
-        <a href="index.html">ГОЛОВНА</a>
-        <a href="menu.html">МЕНЮ</a>
-        <a href="about_us.html">ПРО НАС</a>
-        <a href="reserved.html">БРОНЬ</a>
-        <a href="delivery.html">ДОСТАВКА</a>
-      </nav>
-      <a class="call" href="tel:+380972531845">
-        <img src="phone.png" width="20px" alt="Phone" /> +380972531845
-      </a>
-    </header>
+  <section class="form-section">
+    <div class="left-content">
+      <h1>Замовлення їжі</h1>
+      <p>
+        Ласкаво просимо до нашого ресторану! Щоб зробити замовлення,
+        будь ласка, заповніть форму нижче. Ми доставимо їжу прямо до
+        ваших дверей. Дякуємо, що обрали нас!
+      </p>
+    </div>
+    <div class="right-content">
+      <div class="form-box">
+        <h2>Форма замовлення</h2>
+        <form action="" method="post" class="form">
+          <label for="first-name">Ім'я:</label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            pattern="[A-Za-zА-Яа-яієїґ\s]+"
+            title="Введіть лише букви"
+            required
+          />
 
-    <section class="form-section">
-      <div class="left-content">
-        <h1>Замовлення їжі</h1>
-        <p>
-          Ласкаво просимо до нашого ресторану! Щоб зробити замовлення,
-          будь ласка, заповніть форму нижче. Ми доставимо їжу прямо до
-          ваших дверей. Дякуємо, що обрали нас!
-        </p>
+          <label for="last-name">Прізвище:</label>
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            pattern="[A-Za-zА-Яа-яієїґ\s]+"
+            title="Введіть лише букви"
+            required
+          />
+
+          <label for="phone">Телефон:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="\+?\d*"
+            title="Введіть номер телефону, який може містити лише цифри і знак +"
+            required
+          />
+
+          <label for="district">Район:</label>
+          <input
+            type="text"
+            id="district"
+            name="district"
+            required
+          />
+
+          <label for="address">Адреса:</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            required
+          />
+
+          <label for="order-details">Деталі замовлення:</label>
+          <textarea
+            id="order-details"
+            name="order-details"
+            rows="4"
+            placeholder="Вкажіть, будь ласка, деталі вашого замовлення"
+            required
+          ></textarea>
+
+          <button type="submit" id="myButton">Натисніть мене</button>
+        </form>
       </div>
-      <div class="right-content">
-        <div class="form-box">
-          <h2>Форма замовлення</h2>
-          <form action="" method="post" class="form">
-            <label for="first-name">Ім'я:</label>
-            <input
-              type="text"
-              id="first-name"
-              name="first-name"
-              required
-            />
+    </div>
+  </section>
 
-            <label for="last-name">Прізвище:</label>
-            <input
-              type="text"
-              id="last-name"
-              name="last-name"
-              required
-            />
+  <script>
+    function validateTextInput(input) {
+      const pattern = /^[A-Za-zА-Яа-яієїґ\s]+$/;
 
-            <label for="phone">Телефон:</label>
-            <input type="tel" id="phone" name="phone" required />
+      if (!pattern.test(input.value)) {
+        alert('Введіть лише букви без цифр!');
+        input.value = ''; // Очищення невірного введення
+      }
+    }
 
-            <label for="district">Район:</label>
-            <input
-              type="text"
-              id="district"
-              name="district"
-              required
-            />
+    function validatePhoneInput(input) {
+      const pattern = /^\+?\d*$/;
 
-            <label for="address">Адреса:</label>
-            <input type="text" id="address" name="address" required />
+      if (!pattern.test(input.value)) {
+        alert('Введіть тільки цифри та знак +!');
+        input.value = ''; // Очищення невірного введення
+      }
+    }
 
-            <label for="order-details">Деталі замовлення:</label>
-            <textarea
-              id="order-details"
-              name="order-details"
-              rows="4"
-              placeholder="Вкажіть, будь ласка, деталі вашого замовлення"
-              required
-            ></textarea>
+    let firstName = document.getElementById('first-name');
+    let lastName = document.getElementById('last-name');
+    let phone = document.getElementById('phone');
 
-            
-              <button type="submit" id="myButton">Натисніть мене</button>
+    firstName.addEventListener('input', function() {
+      validateTextInput(firstName);
+    });
 
-              
-          </form>
-          <script>
-          let form = document.querySelector('.form');
+    lastName.addEventListener('input', function() {
+      validateTextInput(lastName);
+    });
 
-        // Додаємо обробник події submit до форми
-        form.addEventListener('click', function(event) {
-            // Запобігаємо стандартній поведінці форми (перезавантаженню сторінки)
-            event.preventDefault();
-            
-            // Показуємо alert з текстом
-            alert('Ви натиснули кнопку!');
-            </script>
-        </div>
-      </div>
-    </section>
-  </body>
+    phone.addEventListener('input', function() {
+      validatePhoneInput(phone);
+    });
+  </script>
+</body>
 </html>
