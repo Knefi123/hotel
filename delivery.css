@@ -18,14 +18,12 @@ header {
   height: auto;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
-  margin-left: 50px;
-}
 
-.nav a {
+
+ 
+
+ 
+.nav, a {
   text-decoration: none;
   color: #a15f0a;
   font-size: 18px;
