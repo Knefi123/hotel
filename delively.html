@@ -30,113 +30,110 @@
         ваших дверей. Дякуємо, що обрали нас!
       </p>
     </div>
-    <div class="right-content">
-      <div class="form-box">
-        <h2>Форма замовлення</h2>
-        <form action="" method="post" class="form">
-          <label for="first-name">Ім'я:</label>
-          <input
-            type="text"
-            id="first-name"
-            name="first-name"
-            pattern="[A-Za-zА-Яа-яієїґ\s]+"
-            title="Введіть лише букви"
-            required
-          />
+    <form action="" method="post" class="form">
+      <label for="first-name">Ім'я:</label>
+      <input
+        type="text"
+        id="first-name"
+        name="first-name"
+        pattern="[A-Za-zА-Яа-яієїґ\s]+"
+        title="Введіть лише букви"
+        required
+      />
 
-          <label for="last-name">Прізвище:</label>
-          <input
-            type="text"
-            id="last-name"
-            name="last-name"
-            pattern="[A-Za-zА-Яа-яієїґ\s]+"
-            title="Введіть лише букви"
-            required
-          />
+      <label for="last-name">Прізвище:</label>
+      <input
+        type="text"
+        id="last-name"
+        name="last-name"
+        pattern="[A-Za-zА-Яа-яієїґ\s]+"
+        title="Введіть лише букви"
+        required
+      />
 
-          <label for="phone">Телефон:</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            pattern="\+?\d*"
-            title="Введіть номер телефону, який може містити лише цифри і знак +"
-            required
-          />
+      <label for="phone">Телефон:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="\+?\d*"
+        title="Введіть номер телефону, який може містити лише цифри і знак +"
+        required
+      />
 
-          <label for="district">Район:</label>
-          <input
-            type="text"
-            id="district"
-            name="district"
-            required
-          />
+      <label for="district">Район:</label>
+      <input
+        type="text"
+        id="district"
+        name="district"
+        required
+      />
 
-          <label for="address">Адреса:</label>
-          <input
-            type="text"
-            id="address"
-            name="address"
-            required
-          />
+      <label for="address">Адреса:</label>
+      <input
+        type="text"
+        id="address"
+        name="address"
+        required
+      />
 
-          <label for="order-details">Деталі замовлення:</label>
-          <textarea
-            id="order-details"
-            name="order-details"
-            rows="4"
-            placeholder="Вкажіть, будь ласка, деталі вашого замовлення"
-            required
-          ></textarea>
+      <label for="order-details">Деталі замовлення:</label>
+      <textarea
+        id="order-details"
+        name="order-details"
+        rows="4"
+        placeholder="Вкажіть, будь ласка, деталі вашого замовлення"
+        required
+      ></textarea>
 
-          <button type="submit" id="myButton">Натисніть мене</button>
-        </form>
-      </div>
-    </div>
-  </section>
+      <button type="submit" id="myButton">Натисніть мене</button>
+    </form>
+  </div>
+</div>
+</section>
 
-  <script>
-    function validateTextInput(input) {
-      const pattern = /^[A-Za-zА-Яа-яієїґ\s]+$/;
+<script>
+function validateTextInput(input) {
+  const pattern = /^[A-Za-zА-Яа-яієїґ\s]+$/;
 
-      if (!pattern.test(input.value)) {
-        alert('Введіть лише букви без цифр!');
-        input.value = ''; // Очищення невірного введення
-      }
-    }
+  if (!pattern.test(input.value)) {
+    alert('Введіть лише букви без цифр!');
+    input.value = ''; // Очищення невірного введення
+  }
+}
 
-    function validatePhoneInput(input) {
-      const pattern = /^\+?\d*$/;
+function validatePhoneInput(input) {
+  const pattern = /^\+?\d*$/;
 
-      if (!pattern.test(input.value)) {
-        alert('Введіть тільки цифри та знак +!');
-        input.value = ''; // Очищення невірного введення
-      }
-    }
+  if (!pattern.test(input.value)) {
+    alert('Введіть тільки цифри та знак +!');
+    input.value = ''; // Очищення невірного введення
+  }
+}
 
-    let firstName = document.getElementById('first-name');
-    let lastName = document.getElementById('last-name');
-    let phone = document.getElementById('phone');
+let firstName = document.getElementById('first-name');
+let lastName = document.getElementById('last-name');
+let phone = document.getElementById('phone');
 
-    firstName.addEventListener('input', function() {
-      validateTextInput(firstName);
-    });
-
-    lastName.addEventListener('input', function() {
-      validateTextInput(lastName);
-    });
-
-    phone.addEventListener('input', function() {
-      validatePhoneInput(phone);
-    });
-    let btn=document.getElementById("myButton")
-    const form = document.getElementById('form');
-    btn.addEventListener("click", function(event) {
-    event.preventDefault(); // Запобігаємо стандартній поведінці кнопки submit
-    alert("Ваше замовлення сформовано!");
-    form.reset();
-    document.getElementById('order-details').value = '';
+firstName.addEventListener('input', function() {
+  validateTextInput(firstName);
 });
-  </script>
+
+lastName.addEventListener('input', function() {
+  validateTextInput(lastName);
+});
+
+phone.addEventListener('input', function() {
+  validatePhoneInput(phone);
+});
+let btn=document.getElementById("myButton")
+const form = document.getElementById('form');
+btn.addEventListener("click", function(event) {
+event.preventDefault(); // Запобігаємо стандартній поведінці кнопки submit
+alert("Ваше замовлення сформовано!");
+form.reset();
+document.getElementById('order-details').value = '';
+});
+</script>
 </body>
 </html>
