@@ -179,3 +179,23 @@ border-bottom: 3px solid #a15f0a;
     -moz-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
   }
+
+
+
+
+
+  .buttmenu{ 
+    padding:20px;
+    margin-left: 500px;
+    margin-top: 100px;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: aqua;
+    transition: 4s linear;
+  }
+
+  .buttmenu:hover{ 
+    transform: rotate(360deg) scale(1.2);
+
+    
+  }
